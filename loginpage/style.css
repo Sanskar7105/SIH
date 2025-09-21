@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Unbounded:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Unbounded:wght@200..900&display=swap');
+
+
+.sl {
+    position: relative;
+    left: 900px;
+    top: 200px;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 15px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.70em;
+    outline: none;
+    width: 400px;
+    animation: animate 5s linear ;
+
+   
+}
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #181818;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #ffffff;
+        
+        
+
+    }
+}
+
+body{
+    background-color: #000;
+}
+
+.er {
+    background-color: #fdfefe;
+    position: relative;
+    bottom: 100px;
+    width: 50%;
+    height: 400px;
+    position: relative;
+    left: 50px;
+    border-radius: 12px;
+    -webkit-box-reflect: below 10px linear-gradient(180deg,transparent,transparent,transparent, #0008);
+    line-height: 0.50em;
+    text-align: center;
+    z-index: 1;
+    transition: 0.5s ease;
+    
+     /* text-shadow: 0 0 1px #f4f4f4,
+            0 0 2px #fff,
+            0 0 4px #fff,
+             0 0 8px #fff,
+            0 0 16px #fff ; */
+            
+}
+.er:hover{
+ 
+    transition-delay: 0.5s;
+    
+    transform: translateX(-10px);
+
+
+}
+
+.er::before{
+    content: "";
+    position: absolute;
+    width:30%  ;
+    height:400px ;
+    left: 0px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius:12px ;
+    /* bottom: 0;
+    top: 10px; */
+    right: 0;
+    background-image: url(Sketching\ Techniques\ for\ Artists.jpeg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.e {
+    color: #0e0e0f;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    font-weight: 900;
+    font-size: large;
+    z-index: 1;
+}
+
+input {
+    margin: 10px;
+    margin-left: 225px;
+    padding: 10px;
+    border-radius: 0px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: black solid 1px;
+    background-color: transparent;
+    color: #000;
+    z-index: 1;
+    width: 300px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.ee {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: #0e3742;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.logingoogle {
+    width: 200px;
+    margin: 10px;
+    margin-left: 204px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.logingoogle:hover{
+    background-color: #4f4e4e;
+    color: #f9fcfc;
+    border: #f9fcfc solid 1px;
+    transition: 0.5s ease;
+}
+
+.welcome {
+    margin: 20px;
+    margin-left: 208px;
+    padding-top: 20px;
+    font-size: x-large;
+    font-weight: 500;
+    font-family:'cinzel';
+    z-index: 1;
+}
+
+.or {
+    position: relative;
+        margin-left: 200px;
+
+    bottom: 0px;
+    z-index: 1;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    height: 1px;
+    width: 96px;
+    position: absolute;
+    background-color: #000;
+    margin: auto 0;
+}
+
+.or::before {
+    right: 1.5rem;
+    bottom: 1vh;
+}
+
+.or::after {
+    left: 1.5rem;
+    bottom: 1vh;
+}
+
+.a {
+    text-decoration: none;
+    color:blue;
+}
+.a:hover{
+    color: rgb(4, 186, 186);
+}
+
+.dont {
+    font-family: 'Montserrat';
+            margin-left: 200px;
+
+    font-weight: 500;
+    z-index: 1;
+}
+
+#i {
+    color: #000;
+    position: relative;
+    right: 35px;
+}
+
+.login-btn {
+    margin-left: 190px;
+    height: 30px;
+    width: 60px;
+    font-family: 'montserrat';
+    border: black  solid 2px;
+    border-radius: 6px;
+}
+.login-btn:hover{
+    background-color: #4f4e4e;
+    color: #f9fcfc;
+    transition: 0.5s ease;
+}
+
+h5 {
+    font-family: 'Montserrat';
+     margin-left: 200px;
+
+}
+h1{
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+    background-color: #f9fcfc;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    z-index: 10;
+    left: 0;
+}
