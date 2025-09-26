@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Unbounded:wght@200..900&display=swap');
 .sl {
     position: relative;
     left: 800px;
@@ -28,6 +29,7 @@
     90.1%,
     92% {
         color: #181818;
+
     }
 
     18.1%,
@@ -41,6 +43,7 @@
     92.1%,
     100% {
         color: #ffffff;
+
     }
 }
 
@@ -84,12 +87,10 @@ body{
     content: "";
     position: absolute;
     width:33%  ;
-    height:1400px ;
+    height:1300px ;
     left: 0px;
     border-bottom-left-radius: 12px;
     border-top-left-radius:12px ;
-    /* bottom: 0;
-    top: 10px; */
     right: 0;
     background-image: url(23.jpeg);
     background-position: center;
@@ -97,23 +98,31 @@ body{
     background-repeat: no-repeat;
 }
 .int {
-    border-radius: 0px;
     height: 50px;
-    border-top: none;
+    /* border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: black solid 1px;
+    border-bottom: black solid 1px; */
     background-color: transparent;
-    color: #000;
+    color:#000;
     z-index: 1;
     width: 300px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
     position: relative;
-    left: 25%;
-
+    right: 20%;
+    margin: 10px;
+    right: 3%;
+    border-radius: 6px;
+    border: none;
 }
-.welcome {
+.int:focus{
+    border-color: cyan ;
+}
+.int::placeholder{
+   color: #f9fcfc;
+}
+/* .welcome {
     margin: 20px;
     padding-top: 20px;
     font-family: 'Montserrat', Courier, monospace;
@@ -129,52 +138,28 @@ body{
     left: 20%;
     margin: 10px;
     padding: 10px;
-}
-.e {
-    color: #0e0e0f;
-    margin: 10px;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
-    font-weight: 900;
-    font-size: large;
-    z-index: 1;
-    position: relative;
-    left: 0%;
-    top: 5%;
-    bottom: 5%;
-}
-.d{
-    font-weight: 400;
-    font-size: x-large;
-    font-family: 'Montserrat';
-    position: relative;
-    right: 200px;
-    margin: 20px;
-    padding: 10px;
-    position: relative;
-    left: 1%;
-}
+} */
 .r{
     margin: 5px;
     padding: 5px;
     height: 20px;
 }
+.r input[type="radio"]{
+    accent-color: #4f4f4f;
+}
 .r1{
-    height: 90px;
-    width: 160px;
+    height: 50px;
+    width: 400px;
     border:#181818 solid 1px;
     border-radius: 10px;
-    align-items: start;
-    text-align: start;
     position: relative;
-    left: 70%;
+    left: 10%;
     
 }
 #i {
     color: #000;
     position: relative;
-    left: 20%;
+    right: 12%;
 }
 .submit-btn {
     margin: 20px;
@@ -185,12 +170,12 @@ body{
     border-radius: 6px;
     position: relative;
     left: 40%;
+    text-decoration: none;
 }
 .submit-btn:hover{
     background-color: #4f4e4e;
     color: #f9fcfc;
     transition: 0.5s ease;
-    margin: 10px;padding: 10px;
 }
 .a {
     font-family: 'Montserrat', Courier, monospace;
@@ -202,6 +187,7 @@ body{
     padding: 10px;
     position: relative;
     left: 28%;
+    color: transparent;
 }
 .ee {
     text-decoration: none;
@@ -210,6 +196,7 @@ body{
 .ee:hover{
     color: rgb(4, 186, 186);
 }
+
 
 /* 
 
@@ -297,3 +284,114 @@ h1{
     left: 0;
 
 } */
+.g{
+    align-items: center;
+    background-color: transparent;
+    text-align:left;
+    width: 600px;
+    position: relative;
+    left: 33%;
+    border-left:50px transparent solid ;
+    /* height: 500px; */
+}
+.d{
+    font-weight: 400;
+    font-size: x-large;
+    font-family: 'Montserrat';
+    position: relative;
+    /* right: 200px; */
+    /* margin: 20px;
+    padding: 10px; */
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.f{
+    background-color: transparent;
+    position: relative;
+    left: 15%;
+    text-align: left;
+}
+/* .e {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    font-weight: 900;
+    font-size: large;
+    z-index: 1;
+    position: relative;
+    left: 0%;
+    top: 90%;
+    } */
+.h{
+    background-color: transparent;
+    position: relative;
+    left: 15%;
+    text-align: left;
+}
+.jk{
+    background-color: white;
+    margin: 0;padding: 0;
+    transition: 1s ease-in-out;
+    align-items: center;
+    position: relative;
+    height: 1300px;
+    /* bottom: 20px; */
+    left: 33%;
+   z-index: 1;
+   color: white;
+}
+.jk::before{
+    content: "";
+    width:700px ;
+    margin: 0;padding: 0;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-color: transparent;
+}
+.jk::after{
+    content: " Get started with \A   ＥＵＣＡＴＡＳＴＲＯＰＨＥ";
+    white-space: pre;
+    line-height: 3;
+    font-size: larger;
+    color: #000;
+    width:700px ;
+    margin: 0;padding: 0;
+    margin-top: 180px;
+    margin-right: 400px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 60;
+    border-color: transparent;
+}
+.jk:hover {
+    transform: translateX(-400px);
+    color: #000;
+    z-index: 100;
+    
+}
+.jk:hover .int{
+    border: #000 solid 1px;
+}
+.jk:hover .int::placeholder{
+    color: #000 ;
+}
+.jk:hover::after{
+    transition: 1s ease;
+    background-color: transparent;
+    color: white;
+    z-index: -23;
+}
+.jk:hover .a{
+    color: #000;
+}
+.lihome{
+    text-decoration: none;
+}

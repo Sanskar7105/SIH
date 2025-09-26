@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,115 +8,122 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css ">
 </head>
+
 <body>
-     <h2 class="sl">REGISTER</h2>
+    <h2 class="sl">REGISTER</h2>
     <form action="" method="post">
-   
-    <div class="er">
-    <!--EMAIL AND PASSWORD-->
-    <div><div class="welcome">Get Started with </div><span class="welcome2"> EUCATASTROPHE</span></div>
-    <div class="d">Personal details :</div>
-    <div class="e" >Email id :</div>
+
+        <div class="er">
+            <div class="jk">
+                <!--EMAIL AND PASSWORD-->
+                <div class="g">
+                    <div class="d">Personal details :</div>
+                    <div class="f">
+                        <div class="e">Email id :</div>
+                        <input class="int" type="text" id="email" class="email"
+                            placeholder="enter your email id....."><i id="i" class="fa-solid fa-envelope"></i>
+
+                        <br>
+                        <br>
+                        <div class="e">Password :</div>
+                        <input class="int" type="password" id="password" placeholder="Password"><i id="i"
+                            class="fa-solid fa-eye"></i>
+
+                        <br>
+                        <br>
+                        <!--Personal details-->
+
+                        <div class="e">Enter Your Name :</div>
+                        <input class="int" type="text" id="name" placeholder="enter your name....."><i id="i"
+                            class="fa-solid fa-user"></i>
+                        <br>
+                        <br>
+                        <div class="e">Date of Birth :</div>
+                        <input class="int" type="date" id="dob" name="dob" max="2025-09-21" min="1947-08-15">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="d">Select Your Gender :</div>
+                    <div class="r1">
+                        <input class="r" type="radio" name="Gender">MALE
+                        <input class="r" type="radio" name="Gender">FEMALE
+                        <input class="r" type="radio" name="Gender">OTHER
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="d">Qualifications :</div>
+                    <div class="r1">
+                        <input class="r" type="radio" name="institute">School
+                        <input class="r" type="radio" name="institute">Under graduate
+                        <input class="r" type="radio" name="institute">Post graduate
+                    </div>
+                    <br>
+                    <!--STATES-->
+                    <div class="d">Location :</div>
+                    <div class="h">
+                        <select class="int" name="State">
+                            <option value="" disabled selected>Select Your State</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh </option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh </option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh </option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram </option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman
+                                and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                        </select>
+                        <br>
+                        <br>
+                        <br>
+                        <textarea class="int" rows="2" cols="60"
+                            placeholder="Enter your full address here....."></textarea>
+                        <br>
+                        <input class="int" type="text" id="landmark" placeholder="enter any nearby landmarks....">
+                    </div>
+                    <br>
+                    <br>
+
+                   <button
+                            class="submit-btn" type="submit"><a class="lihome" href="http://127.0.0.1:3000/Home page/index.html?">SUBMIT</a></button>
+                </div>
+    </form>
     <br>
-    <input class="int" type="text" id="email" class="email" placeholder="enter your email id....."><i id="i" class="fa-regular fa-envelope"></i>
-    
-    <br>
-    <br>
-    <div class="e">Password :</div>
-    <br>
-    <input class="int" type="password" id="password" placeholder="Password" ><i id="i" class="fa-solid fa-eye"></i>
-    
-    <br>
-    <br>
-    <!--Personal details-->
-    
-    <div class="e" >Enter Your Name :</div>
-    <br>
-    <input class="int" type="text" id="name" placeholder="enter your name.....">
-    
-    <br>
-    <br>
-    <div class="e" >Date of Birth :</div>
-    <br>
-<input class="int" type="date" id="dob" name="dob"
-       max="2025-09-21" min="1947-08-15">
-       
-       <br>
-       <br>
-    <div class="d">Select Your Gender :</div>
-    <div class="r1">
-    <input class="r" type="radio" name="Gender">MALE
-    <br>
-    <input class="r" type="radio" name="Gender">FEMALE
-    <br>
-    <input class="r" type="radio" name="Gender">OTHER
+    <br>                                                                                                                
+    <div class="a">Already have an account?<a class="ee"
+            href="http://127.0.0.1:3000/loginpage/index.html?serverWindowId=93a9c476-75ec-4ea7-ab3a-cb74954d230c">Login</a>
+
     </div>
-    
-    <br>
-    <br>
-    <div class="d">Qualifications :</div>
-    <div class="r1">
-    <input class="r" type="radio" name="institute">School
-    <br>
-    <input class="r" type="radio" name="institute">Under graduate
-    <br>
-    <input class="r" type="radio" name="institute">Post graduate
     </div>
-    <br>
-    <!--STATES-->
-    <div class="d">Location :</div>
-    <select class="int" name="State">
-    <option value="" disabled selected>Select Your State</option> 
-    <option value="Andhra Pradesh">Andhra Pradesh </option>
-    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-    <option value="Assam">Assam</option>
-    <option value="Bihar">Bihar</option>
-    <option value="Chhattisgarh">Chhattisgarh </option>
-    <option value="Goa">Goa</option>
-    <option value="Gujarat">Gujarat</option>
-    <option value="Haryana">Haryana</option>
-    <option value="Himachal Pradesh">Himachal Pradesh </option>
-    <option value="Jharkhand">Jharkhand</option>
-    <option value="Karnataka">Karnataka</option>
-    <option value="Kerala">Kerala</option>
-    <option value="Madhya Pradesh">Madhya Pradesh</option>
-    <option value="Maharashtra">Maharashtra</option>
-    <option value="Manipur">Manipur</option>
-    <option value="Meghalaya">Meghalaya</option>
-    <option value="Mizoram">Mizoram </option>
-    <option value="Nagaland">Nagaland</option>
-    <option value="Odisha">Odisha</option>
-    <option value="Punjab">Punjab</option>
-    <option value="Rajasthan">Rajasthan</option>
-    <option value="Sikkim">Sikkim</option>
-    <option value="Tamil Nadu">Tamil Nadu</option>
-    <option value="Tripura">Tripura</option>
-    <option value="Uttar Pradesh">Uttar Pradesh</option>
-    <option value="Uttarakhand">Uttarakhand</option>
-    <option value="West Bengal">West Bengal</option>
-    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-    <option value="Chandigarh">Chandigarh</option>
-    <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
-    <option value="Delhi">Delhi</option>
-    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-    <option value="Ladakh">Ladakh</option>
-    <option value="Lakshadweep">Lakshadweep</option>
-    <option value="Puducherry">Puducherry</option>
-</select>
-<br>
-<br>
-<br>
-<textarea class="int" rows="2" cols="60" placeholder="Enter your full address here....."></textarea>
-<br>
-<input class="int" type="text" id="landmark" placeholder="enter any nearby landmarks....">
-<br>
-<br>
-<button class="submit-btn" type="submit">SUBMIT</button>
-<br>
-<br>
-<div class="a">Already have an account?<a class="ee" href="http://127.0.0.1:3000/loginpage/index.html?serverWindowId=93a9c476-75ec-4ea7-ab3a-cb74954d230c">Login</a>
-</form>
-</div>
 
 </body>
+
 </html>

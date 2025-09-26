@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation Example</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* This is where you would place the CSS code from the previous response for quick testing */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            /* Add some vertical space to enable scrolling and trigger the effect */
+            height: 200vh; 
+        }
+
+        .scroll-animation-section {
+            position: relative;
+            height: 100vh; /* The viewable area for the animation */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden; 
+            background-color: #f7f7f7; /* Light background */
+        }
+        
+        .main-content {
+            z-index: 20; /* Ensure text is above images */
+            max-width: 600px;
+        }
+
+        .main-content h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        
+        /* Food Image CSS (as provided previously) */
+        .food-image {
+            position: absolute;
+            width: 300px; 
+            height: auto;
+            z-index: 10;
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+        }
+
+        .burger-image {
+            top: 30%;
+            left: 10%;
+            transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+
+        .pizza-image {
+            bottom: 5%;
+            right: 5%;
+            width: 350px; /* Slightly larger image */
+            transform: translate(0, 0) rotate(15deg) scale(1);
+        }
+
+        .dumplings-image {
+            top: 5%;
+            right: 15%;
+            width: 250px; /* Slightly smaller image */
+            transform: translate(0, 0) rotate(-10deg) scale(1);
+        }
+
+        /* Classes applied via JavaScript on scroll */
+        .burger-image.animate-out {
+            transform: translate(-50px, -100px) rotate(-10deg) scale(0.9);
+            opacity: 0.8;
+        }
+
+        .pizza-image.animate-out {
+            transform: translate(100px, 100px) rotate(25deg) scale(0.9);
+            opacity: 0.8;
+        }
+
+        .dumplings-image.animate-out {
+            transform: translate(50px, -50px) rotate(-20deg) scale(0.9);
+            opacity: 0.8;
+        }
+
+        /* Bottom stats section */
+        .stats-section {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-around;
+            z-index: 30;
+            border-top: 1px solid #ddd;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2em;
+            color: #ff5722; /* Zomato-like color */
+            margin-bottom: 0.1em;
+        }
+
+        .stat-item p {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="scroll-animation-section">
+        
+        <div class="main-content">
+            <h1>Better food for more people</h1>
+            <p>For over a decade, we've enabled our customers to discover new tastes, delivered right to their doorstep</p>
+        </div>
+
+        <img src="path/to/burger.png" alt="Delicious Burger" class="food-image burger-image">
+        <img src="path/to/pizza.png" alt="Pizza Slice" class="food-image pizza-image">
+        <img src="path/to/dumplings.png" alt="Steamed Dumplings" class="food-image dumplings-image">
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <h3>3,00,000+</h3>
+                <p>restaurants</p>
+            </div>
+            <div class="stat-item">
+                <h3>800+</h3>
+                <p>cities</p>
+            </div>
+            <div class="stat-item">
+                <h3>3 billion+</h3>
+                <p>orders delivered</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div style="height: 100vh; background-color: #eee; padding: 20px;">
+        <h2>Scroll Down to See the Effect</h2>
+        <p>This space is just to ensure the page is scrollable.</p>
+    </div>
+
+    <script>
+        document.addEventListener('scroll', () => {
+            const foodImages = document.querySelectorAll('.food-image');
+            const scrollThreshold = 100; // Pixels to scroll down before animation starts
+
+            if (window.scrollY > scrollThreshold) {
+                foodImages.forEach(img => {
+                    img.classList.add('animate-out');
+                });
+            } else {
+                foodImages.forEach(img => {
+                    img.classList.remove('animate-out');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

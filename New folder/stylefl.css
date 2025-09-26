@@ -1,0 +1,74 @@
+/* Basic container setup for the animated section (optional but good practice) */
+.scroll-animation-section {
+    position: relative; /* Allows positioning children relative to this section */
+    height: 100vh; /* Example height */
+    overflow: hidden; /* Important to keep animated elements within bounds */
+}
+
+/* Styles for the food images */
+.food-image {
+    /* Absolute positioning is often used for elements that float over the main content */
+    position: absolute;
+    /* Basic dimensions and visual properties */
+    width: 300px; /* Example size */
+    height: auto;
+    z-index: 10; /* Ensure they are above background elements */
+    
+    /* Smooth transition for properties that will be changed (e.g., transform, opacity) */
+    /* This ensures the movement is smooth even if triggered by JS */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+/* Specific initial positions and transforms for each image */
+
+/* 1. Burger Image (Left) */
+.burger-image {
+    top: 30%; /* Example vertical placement */
+    left: 10%; /* Example horizontal placement */
+    /* Initial transform: slight rotation and scale up/down */
+    transform: translate(0, 0) rotate(0deg) scale(1);
+}
+
+/* 2. Pizza Slice Image (Bottom Right) */
+.pizza-image {
+    bottom: 5%; /* Example vertical placement from the bottom */
+    right: 5%; /* Example horizontal placement */
+    /* Initial transform: slight rotation and scale up/down */
+    transform: translate(0, 0) rotate(15deg) scale(1);
+}
+
+/* 3. Steamed Buns/Dumplings Image (Top Right) */
+.dumplings-image {
+    top: 5%; /* Example vertical placement */
+    right: 15%; /* Example horizontal placement */
+    /* Initial transform: slight rotation and scale up/down */
+    transform: translate(0, 0) rotate(-10deg) scale(1);
+}
+
+
+/* --- CSS Classes Applied via JavaScript on Scroll --- */
+
+/* These classes represent the *active* state when the user is scrolled past a certain point.
+   JavaScript would add these classes to the respective .food-image elements. */
+
+.burger-image.animate-out {
+    /* Move the burger up and slightly off-screen, or away from the center */
+    transform: translate(-50px, -100px) rotate(-10deg) scale(0.9);
+    opacity: 0.8; /* Make it slightly transparent as it moves */
+}
+
+.pizza-image.animate-out {
+    /* Move the pizza further down and to the right */
+    transform: translate(100px, 100px) rotate(25deg) scale(0.9);
+    opacity: 0.8;
+}
+
+.dumplings-image.animate-out {
+    /* Move the dumplings up and to the right */
+    transform: translate(50px, -50px) rotate(-20deg) scale(0.9);
+    opacity: 0.8;
+}
+
+/* Note on movement: In the video, the elements *appear* to subtly shift
+   as the user scrolls. The translate values would be small to create a
+   parallax or subtle drift effect. */

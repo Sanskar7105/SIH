@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Knowledge Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+     <a href="http://127.0.0.1:3000/Home page/index.html?serverWindowId=5f4f53dc-7d9e-4516-aba7-47932caac900"><button class="back1">Back</button></a>
+    <div class="container">
+        <div class="header">
+            <div class=><p class="title">Q</p><p class="title">U</p><p class="title">I</p><p class="title">Z</p></div>
+            <p class="subtitle">How prepared are you for the catastrophe?</p>
+        </div>
+
+        <div class="quiz-container">
+            <div id="quiz-box" class="quiz-box">
+                <h2 id="question" class="question-text"></h2>
+                <ul id="answer-buttons" class="answers-list"></ul>
+                <button id="next-btn" class="next-btn">Next ➡</button>
+            </div>
+            
+
+            <div id="result-box" class="result-box hidden">
+                <h2 id="score" class="score-text"></h2>
+                <input type="text" id="player-name" class="score-input" placeholder="Enter your name" maxlength="20">
+                <div class="buttons-container">
+                    <button id="save-score" class="save-btn">Save Score</button>
+                    <button id="restart-btn" class="restart-btn">Play Again</button>
+                </div>
+            </div>
+        </div>
+<div class="divider">___________________________________________________________</div>
+        <div class="leaderboard">
+            <h3 class="leaderboard-title"><i class="fa-solid fa-trophy"></i> Leaderboard</h3>
+            <ul id="leaderboard" class="leaderboard-list"></ul>
+        </div>
+    </div>
+   
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

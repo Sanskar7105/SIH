@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Grid Container */
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Card Style */
+    .course-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+    }
+
+    .course-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .course-desc {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #4caf50;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    .explore-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: 1px solid #4caf50;
+      border-radius: 8px;
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .explore-btn:hover {
+      background: #4caf50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Popular Courses</h1>
+  <div class="course-container">
+
+    <!-- Card 1 -->
+    <div class="course-card">
+      <div class="course-title">Tech Interview 101</div>
+      <div class="course-desc">DSA to System Design for Working Professionals</div>
+      <div class="price">₹17999 <span class="old-price">₹29999</span></div>
+      <a href="#" class="explore-btn">Explore</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="course-card">
+      <div class="course-title">Java Backend Development</div>
+      <div class="course-desc">Intermediate to Advanced</div>
+      <div class="price">₹14999 <span class="old-price">₹19999</span></div>
+      <a href="#" class="explore-btn">Explore</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="course-card">
+      <div class="course-title">Machine Learning & Data Science</div>
+      <div class="course-desc">Beginner to Advanced - Live</div>
+      <div class="price">₹5999 <span class="old-price">₹9999</span></div>
+      <a href="#" class="explore-btn">Explore</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="course-card">
+      <div class="course-title">GATE Gurukul</div>
+      <div class="course-desc">Personalized Program</div>
+      <div class="price">₹29999 <span class="old-price">₹39999</span></div>
+      <a href="#" class="explore-btn">Explore</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

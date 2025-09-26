@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.error{
+    color: white;
+    font-size:100px;
+    font-family: 'Montserrat';
+    margin: 40px;
+    text-align: left;
+}
+.error2{
+    margin: 40px;
+    color: white;
+    font-size:200px;
+    font-family: 'Montserrat';
+    position: relative;
+    bottom: 80px;
+    text-align: left;
+}.error3{
+    font-size:50px;
+    color: white;
+    margin: 40px;
+    font-family: 'Montserrat';
+    position: relative;
+    bottom: 150px;
+    text-align: left;
+}
+.error4{
+    height: 550px;
+    width: 400px;
+    background-image: url(image.png);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    left:800px;
+    bottom:400px;
+    border-radius: 105px;
+}

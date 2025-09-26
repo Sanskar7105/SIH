@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Unbounded:wght@200..900&display=swap');
+body{margin: 0;
+    padding: 0;
+    background-color: black;
+    margin-top:-50px;
+}
+.ab{
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    display:flex; 
+    top: 0px; 
+    bottom: 10px;  
+    background: rgb(247, 247, 247);
+}
+.abc{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    z-index: 1;
+    margin-bottom: 190px;
+    /* -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; */
+}
+.ab:before{
+    content: 'EUCATASTROPHE ';
+    position: absolute;
+    font-weight: 900;
+    top: 19%;
+    left: 24%;
+    width: 800px;
+    height: 700px;
+    font-size: 60px;
+    color: transparent;
+
+    background:linear-gradient(90deg, #ffe0c4, #ff80ab, #6a0572);
+    -webkit-background-clip: text;
+    z-index: 20;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+.ab::after{
+    content: "";
+    position: absolute;
+    height:700px;
+    width:100%;
+    font-size: 30px ;
+    background:linear-gradient(180deg,transparent,transparent,transparent, rgba(15, 15, 15,0.9));
+    z-index: 12;
+    align-items:last baseline;
+    
+
+}
+
+.abcd{
+    position: absolute;
+    left: 55%;
+    top:80%;
+    padding: 0;
+    font-size: 24px;
+    background-color:rgb(247, 4, 85,0.7);
+    border: none;
+    width:200px ;
+    height:50px ;
+    color: white;
+    border-radius: 50px;
+    z-index: 256;
+    text-align: center;
+    transition:transform 0.3s ease;
+}
+.abcd:hover{
+    background:linear-gradient(to right, cyan, magenta);
+    transform:translateY(-5px);
+    transition: 0.3s;
+    color: black;
+}
+.abcdef{
+    position: absolute;
+    left: 33%;
+    top:80%;
+    padding: 0;
+    font-size: 24px;
+    background:rgb(247, 4, 85,0.7);
+    border: none;
+    width:200px ;
+    height:50px ;
+    color: white;
+    border-radius: 50px;
+    z-index: 256;
+    text-align: center;
+    transition:transform 0.3s ease;
+}
+.abcdef:hover{
+    background:linear-gradient(to right, cyan, magenta);
+    transform:translateY(-5px);
+    transition: 0.3s;
+    color: black;
+}
+.abcde{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    z-index: 56;
+}
+.abcde:hover{
+    color:black;
+    
+    text-decoration: none;
+    z-index: 34;
+}
+.abcdefg{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    z-index: 56;
+}
+.abcdefg:hover{
+    color:black;
+    
+    text-decoration: none;
+    z-index: 34;
+}
+/* .he{
+margin: 0;
+padding: 0;
+align-items: center;
+position:absolute;
+top:6px;
+color:white;
+z-index: 1;}  */
+/* h1{
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 7;
+    position:sticky;
+    top:0;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    height:50px ;
+    width: 100%;
+    position: relative;
+    top:-100px;
+    background-color: black;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+
+} */
+ .li{
+    background-color:transparent;
+    height: auto;
+    font-size: 98px;
+    position: relative;
+    bottom: 1480px;
+    left: 720px;
+    margin: 0;padding: 0;
+    width: 10px;
+    align-items: center;
+    color: white;
+    z-index:40;
+
+ }
+ .intro{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    z-index: 34;
+    position:relative;
+    bottom: 1650px;
+    left: 560px;
+    width: 340px;
+ }
+ .img2{
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(download\ \(22\).jpeg);
+    z-index: 35;
+    position: relative;
+    bottom: 180px;
+   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.scroll{
+    color: white;
+    position: relative;
+    z-index: 40;
+    bottom: 2210px;
+    width: 200px;
+    text-align: center;
+    font-size:18px ;
+    font-weight: 200;
+    font-family: 'Montserrat';
+    left: 45%;
+    animation: bounce 1.5s infinite;
+}
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(-6px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+ #contact{
+    height: 600px;
+    position: relative;
+    bottom: 100px;
+    background-color: #000;
+    z-index: 0;
+}
+.cont1{
+    position: relative;
+    bottom: 100px;
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    z-index: 29;
+}
+ table{
+     width: 70%;
+      border-collapse: collapse;
+      font-family: 'Montserrat';
+      position: relative;
+      left: 60px;
+      z-index: 50;
+}
+th{
+    color: white;
+    text-align: left;
+    height: 50px;
+
+}
+td{
+    height: 40px;
+    color: rgb(110, 109, 109);
+}
+td:hover{
+    color: #4caf50;
+}
+.social{
+    position:absolute ;
+    left: 00px;
+    top: 70%;
+    left: 4%;
+    height: 200px;
+    width: 500px;
+    font-family:'montserrat' ;
+    font-size:30px ;
+    font-weight: 500;
+    color: white;
+}
+.least i{font-size: xx-large;
+    position: relative;
+    margin: 2px;
+    padding: 2px;
+    margin-bottom: 2px;
+    color: white;
+}
+ .least{
+    position: relative;
+    right:30px ;
+    top:30px; 
+ }
+ .least i:hover{
+     -webkit-text-fill-color: transparent;
+     background: linear-gradient(20deg,cyan,magenta) ;
+     -webkit-background-clip:text;
+     white-space: nowrap; 
+ } 
+ .mid{
+    height: 1400px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 700px;
+    z-index: 56;
+    padding: 20px;
+ }
+ .mid2{
+    height: 400px;
+    width: 700px;
+    background-color: rgba(15, 15, 15,0.6);
+    font-size:60px ;
+    font-family: 'montserrat';
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+ }
+.mid3{
+    font-size: large;
+    padding: 20px;
+    text-align: center;
+}
+.mid4{
+    height: 400px;
+    width: 700px;
+    background-color: rgba(15, 15, 15,0.6);
+    font-size:60px ;
+    font-family: 'montserrat';
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+.mid5{
+    font-size: large;
+    padding: 20px;
+}
+.mid6{
+    margin: 20px;
+    font-size: 30px;
+}
+#cards{
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 12px;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+.mid7{
+    margin: 20px;
+font-size: large;
+}
+.mid8{
+    margin: 20px;
+    font-size: 30px;
+    position: relative;
+}
+.mid9{
+    margin: 20px;
+    font-size: 30px;
+}
+.mid10{
+    margin: 20px;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    right: 150px;
+    width: 900px;
+}
+#pict{
+    height: 350px;
+    width: 200px;
+    border-radius:12px ;
+    position: relative;
+    bottom: 1200px;
+    margin: 0;padding: 0;
+}
+.pict1{
+    background-image: url(image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 700px;
+    transform: rotate(45deg);
+    animation: left-side 6s infinite ;
+    z-index: -1;
+}
+@keyframes left-side{
+    0%,100%{
+       transform:translateY(0px) rotate(0deg) ;
+       opacity: 0;
+    }
+    50%{
+        transform: translateX(500px) rotate(45deg);
+        opacity: 1;
+    }
+}
+.pict2{
+    background-image: url(download\ \(22\).jpeg);
+    background-position: center;
+    background-size: cover;
+     position: relative;
+    left: 850px;
+     transform: rotate(45deg);
+     animation: left1-side 6s infinite ;
+    z-index: -1;
+}
+@keyframes left1-side{
+    0%,100%{
+       transform:translateY(0px) rotate(0deg) ;
+       opacity: 0;
+    }
+    50%{
+        transform: translateX(-500px) rotate(45deg);
+        opacity: 1;
+    }
+}
+.pict3{
+    background-image: url(download\ \(24\).jpeg);
+    background-position: center;
+    background-size: cover;
+     position: relative;
+    right: 300px;
+     transform: rotate(-45deg);
+     z-index: -1;
+     animation: left-side 6s infinite ;
+}
+
+.pict4{
+    background-image: url(download\ \(25\).jpeg);
+    background-position: center;
+    background-size: cover;
+     position: relative;
+    left: 850px;
+    z-index: -1;
+     transform: rotate(45deg);
+      animation: left1-side 6s infinite ;
+}
